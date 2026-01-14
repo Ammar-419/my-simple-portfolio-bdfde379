@@ -2,10 +2,10 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    title: "Task Management App",
+    title: "SabiBoss",
     description:
-      "A drag-and-drop task board for managing personal and team projects. Features real-time updates and a clean, minimal interface.",
-    techStack: ["React", "TypeScript", "Tailwind CSS", "Firebase"],
+      "A comprehensive platform designed to help businesses manage operations, track performance, and scale efficiently with intuitive tools.",
+    techStack: ["React", "TypeScript", "Node.js", "MongoDB"],
     liveUrl: "#", // TODO: Replace with actual live demo URL
     githubUrl: "#", // TODO: Replace with actual GitHub URL
   },
@@ -18,10 +18,10 @@ const projects = [
     githubUrl: "#", // TODO: Replace with actual GitHub URL
   },
   {
-    title: "Weather Forecast PWA",
+    title: "OctaLearn",
     description:
-      "Progressive web app providing 7-day weather forecasts with location detection and offline support.",
-    techStack: ["React", "PWA", "OpenWeather API", "CSS Modules"],
+      "An interactive learning platform with course management, progress tracking, and engaging educational content delivery.",
+    techStack: ["React", "TypeScript", "Firebase", "Tailwind CSS"],
     liveUrl: "#", // TODO: Replace with actual live demo URL
     githubUrl: "#", // TODO: Replace with actual GitHub URL
   },

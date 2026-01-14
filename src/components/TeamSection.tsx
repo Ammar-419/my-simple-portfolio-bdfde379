@@ -14,24 +14,28 @@ import TeamMemberCard from "./TeamMemberCard";
 
 const teamMembers = [
   {
-    name: "Sarah Chen",
+    name: "Sadis Isah Sulaiman",
+    role: "Cyber Security Specialist",
+    collaborationNote: "Security audits and vulnerability assessments",
+    imageUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face",
+  },
+  {
+    name: "Muhammad Jibril",
     role: "Backend Developer",
-    collaborationNote: "Collaborated on Task Management App",
+    collaborationNote: "API development and database architecture",
+    imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face",
   },
   {
-    name: "Marcus Johnson",
-    role: "UI/UX Designer",
-    collaborationNote: "Collaborated on E-commerce Dashboard",
-  },
-  {
-    name: "Emily Rodriguez",
+    name: "Ibrahim Yahaya Ibrahim",
     role: "Product Manager",
-    collaborationNote: "Worked together on multiple projects",
+    collaborationNote: "Product strategy and roadmap planning",
+    imageUrl: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=200&h=200&fit=crop&crop=face",
   },
   {
-    name: "Alex Kim",
-    role: "DevOps Engineer",
-    collaborationNote: "CI/CD setup and deployment workflows",
+    name: "Khadija Babangida",
+    role: "UI/UX Designer",
+    collaborationNote: "User research and interface design",
+    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face",
   },
 ];
 
