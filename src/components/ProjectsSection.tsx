@@ -6,15 +6,15 @@ const projects = [
     description:
       "A comprehensive platform designed to help businesses manage operations, track performance, and scale efficiently with intuitive tools.",
     techStack: ["React", "TypeScript", "Node.js", "MongoDB"],
-    liveUrl: "#", // TODO: Replace with actual live demo URL
-    githubUrl: "#", // TODO: Replace with actual GitHub URL
+    liveUrl: "sabi-boss.vercel.app", // TODO: Replace with actual live demo URL
+    githubUrl: "https://github.com/Ammar-419/remix-of-sabi-boss-biz-aid", // TODO: Replace with actual GitHub URL
   },
   {
-    title: "E-commerce Dashboard",
+    title: "Freelancing platform",
     description:
-      "Admin dashboard for an online store with sales analytics, inventory management, and order tracking features.",
+      "A website made by student for student to help them with guidiance for their assigment project and aot more ",
     techStack: ["React", "Chart.js", "Node.js", "PostgreSQL"],
-    liveUrl: "#", // TODO: Replace with actual live demo URL
+    liveUrl: "Octapus,org", // TODO: Replace with actual live demo URL
     githubUrl: "#", // TODO: Replace with actual GitHub URL
   },
   {
@@ -23,7 +23,7 @@ const projects = [
       "An interactive learning platform with course management, progress tracking, and engaging educational content delivery.",
     techStack: ["React", "TypeScript", "Firebase", "Tailwind CSS"],
     liveUrl: "#", // TODO: Replace with actual live demo URL
-    githubUrl: "#", // TODO: Replace with actual GitHub URL
+    githubUrl: "https://github.com/Lanslot47/OctaLearn", // TODO: Replace with actual GitHub URL
   },
 ];
 

@@ -10,7 +10,8 @@ const HeroSection = () => {
             <div className="w-full h-full rounded-full bg-secondary flex items-center justify-center overflow-hidden border-2 border-border">
               {/* TODO: Replace with your actual profile image */}
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                src="/IMG_2753.JPG"
+                
                 alt="Amar Hussaini"
                 className="w-full h-full object-cover"
               />
@@ -29,7 +30,7 @@ const HeroSection = () => {
 
           {/* Role */}
           <p className="text-xl md:text-2xl text-primary font-medium">
-            Frontend Engineer (React)
+            Frontend Engineer (React , Next)
           </p>
 
           {/* Description */}
@@ -42,7 +43,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
             {/* TODO: Update href to your actual CV file URL */}
             <a
-              href="#"
+              href="https://github.com/Ammar-git-face/Amar-portfolio/blob/main/Amar_CV_Hackathon.pdf"
               className="btn-primary gap-2"
               aria-label="Download CV"
             >
@@ -57,7 +58,7 @@ const HeroSection = () => {
               aria-label="Buy Me a Coffee"
             >
               <Coffee className="w-4 h-4" />
-              Buy Me a Coffee
+              Buy Me some Coffee
             </a>
           </div>
         </div>

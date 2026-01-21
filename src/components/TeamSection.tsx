@@ -17,25 +17,25 @@ const teamMembers = [
     name: "Sadis Isah Sulaiman",
     role: "Cyber Security Specialist",
     collaborationNote: "Security audits and vulnerability assessments",
-    imageUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face",
+    imageUrl: "IMG_2753.JPG",
   },
   {
     name: "Muhammad Jibril",
     role: "Backend Developer",
     collaborationNote: "API development and database architecture",
-    imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face",
+    imageUrl: "IMG_2753.JPG",
   },
   {
     name: "Ibrahim Yahaya Ibrahim",
     role: "Product Manager",
     collaborationNote: "Product strategy and roadmap planning",
-    imageUrl: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=200&h=200&fit=crop&crop=face",
+    imageUrl: "IMG_2753.JPG",
   },
   {
     name: "Khadija Babangida",
     role: "UI/UX Designer",
     collaborationNote: "User research and interface design",
-    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face",
+    imageUrl: "IMG_2753.JPG",
   },
 ];
 
@@ -44,7 +44,7 @@ const TeamSection = () => {
     <section id="team" className="section-container">
       <h2 className="section-title">Team & Collaboration</h2>
       <p className="section-subtitle mb-10">
-        Great products are built by great teams. Here are some talented people 
+        Great products are built by great teams. Here are some talented people
         I've had the pleasure of working with.
       </p>
 
