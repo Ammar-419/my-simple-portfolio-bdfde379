@@ -30,8 +30,7 @@ const ContactSection = () => {
         headers: {
           "Content-Type": "application/json",
           "Accept": "application/json",
-        },
-        0fbb5919-c80a-45ea-ae0c-2bbf48f4dc9f
+        }
         body: JSON.stringify({
           access_key: "0fbb5919-c80a-45ea-ae0c-2bbf48f4dc9f", // <--- PASTE YOUR KEY HERE
           // access_key: process.env.VITE_WEB3FORM_KEY, // <--- PASTE YOUR KEY HERE
