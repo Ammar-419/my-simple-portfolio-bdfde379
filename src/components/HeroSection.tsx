@@ -10,8 +10,7 @@ const HeroSection = () => {
             <div className="w-full h-full rounded-full bg-secondary flex items-center justify-center overflow-hidden border-2 border-border">
               {/* TODO: Replace with your actual profile image */}
               <img
-                src="/IMG_2753.JPG"
-                
+                src="/IMG_2757.JPEG"
                 alt="Amar Hussaini"
                 className="w-full h-full object-cover"
               />
@@ -43,7 +42,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
             {/* TODO: Update href to your actual CV file URL */}
             <a
-              href="https://github.com/Ammar-git-face/Amar-portfolio/blob/main/Amar_CV_Hackathon.pdf"
+              href="https://drive.google.com/file/d/1MME50T7n3Fxi4hkoeNo-1LB0uk1ZwfXB/view?usp=sharing"
               className="btn-primary gap-2"
               aria-label="Download CV"
             >
