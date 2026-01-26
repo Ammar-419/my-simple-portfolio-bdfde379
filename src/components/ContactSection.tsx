@@ -21,42 +21,43 @@ const ContactSection = () => {
   } = useForm<ContactFields>();
 
   // 3. The Submit Logic
-  const onSubmit: SubmitHandler<ContactFields> = async (data) => {
-    setStatus("submitting");
+ const onSubmit: SubmitHandler<ContactFields> = async (data) => {
+  setStatus("submitting");
 
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json",
-        },
-        body: JSON.stringify({
-            access_key: import.meta.env.VITE_WEB3FORM_KEY,// <--- PASTE YOUR KEY HERE
-          // access_key: process.env.VITE_WEB3FORM_KEY, // <--- PASTE YOUR KEY HERE
-          name: data.name,
-          email: data.email,
-          message: data.message,
-          from_name: "Portfolio Contact Form", // Helps you identify the email
-          subject: `New Message from ${data.name}`
-        }),
-      });
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+      },
+      body: JSON.stringify({
+        access_key: import.meta.env.VITE_WEB3FORM_KEY,
+        name: data.name,
+        email: data.email,
+        message: data.message,
+        from_name: "Portfolio Contact Form",
+        subject: `New Message from ${data.name}`,
+      }),
+    });
 
-      const result = await response.json();
+    const result = await response.json();
 
-      if (result.success) {
-        setStatus("success");
-        reset(); // Clears the form fields
-        setTimeout(() => setStatus("idle"), 5000);
-      } else {
-        throw new Error("Submission failed");
-      }
-    } catch (error) {
-      console.error(error);
-      setStatus("error");
+    if (result.success) {
+      setStatus("success");
+      reset();
       setTimeout(() => setStatus("idle"), 5000);
+    } else {
+      console.error(result);
+      throw new Error("Submission failed");
     }
-  };
+  } catch (error) {
+    console.error(error);
+    setStatus("error");
+    setTimeout(() => setStatus("idle"), 5000);
+  }
+};
+
 
   return (
     <section id="contact" className="section-container">
