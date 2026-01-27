@@ -43,7 +43,7 @@ const HeroSection = () => {
 
             Final-year Computer Science student passionate about modern web technologies,
             clean architecture, and continuous learning. Ready to contribute to remote
-            teams building the next generation of web applications.s.
+            teams building the next generation of web applications.
           </p>
 
           {/* CTAs */}
