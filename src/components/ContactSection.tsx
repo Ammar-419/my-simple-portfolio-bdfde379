@@ -20,60 +20,25 @@ const ContactSection = () => {
     formState: { errors },
   } = useForm<ContactFields>();
 
-  // 3. The Submit Logic
-  //  const onSubmit: SubmitHandler<ContactFields> = async (data) => {
-  //   setStatus("submitting");
-
-  //   try {
-  //     const response = await fetch("https://api.web3forms.com/submit", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //         "Accept": "application/json",
-  //       },
-  //       body: JSON.stringify({
-  //         access_key: "0fbb5919-c80a-45ea-ae0c-2bbf48f4dc9f",
-  //         name: data.name,
-  //         email: data.email,
-  //         message: data.message,
-  //         from_name: "Portfolio Contact Form",
-  //         subject: `New Message from ${data.name}`,
-  //       }),
-  //     });
-
-  //     const result = await response.json();
-
-  //     if (result.success) {
-  //       setStatus("success");
-  //       reset();
-  //       setTimeout(() => setStatus("idle"), 5000);
-  //     } else {
-  //       console.error(result);
-  //       throw new Error("Submission failed");
-  //     }
-  //   } catch (error) {
-  //     console.error(error);
-  //     setStatus("error");
-  //     setTimeout(() => setStatus("idle"), 5000);
-  //   }
-  // };
-
-  const onSubmit: SubmitHandler<ContactFields> = async (data) => {
+ 
+   const onSubmit: SubmitHandler<ContactFields> = async (data) => {
     setStatus("submitting");
 
     try {
-      const formData = new FormData();
-      formData.append("access_key", "0fbb5919-c80a-45ea-ae0c-2bbf48f4dc9f");
-      
-      formData.append("name", data.name);
-      formData.append("email", data.email);
-      formData.append("message", data.message);
-      formData.append("subject", `New Message from ${data.name}`);
-      formData.append("from_name", "Portfolio Contact Form");
-
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        body: formData,
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "0fbb5919-c80a-45ea-ae0c-2bbf48f4dc9f",
+          name: data.name,
+          email: data.email,
+          message: data.message,
+          from_name: "Portfolio Contact Form",
+          subject: `New Message from ${data.name}`,
+        }),
       });
 
       const result = await response.json();
@@ -92,6 +57,41 @@ const ContactSection = () => {
       setTimeout(() => setStatus("idle"), 5000);
     }
   };
+
+  // const onSubmit: SubmitHandler<ContactFields> = async (data) => {
+  //   setStatus("submitting");
+
+  //   try {
+  //     const formData = new FormData();
+  //     formData.append("access_key", "0fbb5919-c80a-45ea-ae0c-2bbf48f4dc9f");
+      
+  //     formData.append("name", data.name);
+  //     formData.append("email", data.email);
+  //     formData.append("message", data.message);
+  //     formData.append("subject", `New Message from ${data.name}`);
+  //     formData.append("from_name", "Portfolio Contact Form");
+
+  //     const response = await fetch("https://api.web3forms.com/submit", {
+  //       method: "POST",
+  //       body: formData,
+  //     });
+
+  //     const result = await response.json();
+
+  //     if (result.success) {
+  //       setStatus("success");
+  //       reset();
+  //       setTimeout(() => setStatus("idle"), 5000);
+  //     } else {
+  //       console.error(result);
+  //       throw new Error("Submission failed");
+  //     }
+  //   } catch (error) {
+  //     console.error(error);
+  //     setStatus("error");
+  //     setTimeout(() => setStatus("idle"), 5000);
+  //   }
+  // };
 
   return (
     <section id="contact" className="section-container">
