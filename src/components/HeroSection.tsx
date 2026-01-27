@@ -34,8 +34,16 @@ const HeroSection = () => {
 
           {/* Description */}
           <p className="text-lg text-muted-foreground max-w-xl">
-            Crafting clean, responsive interfaces with a focus on user experience 
-            and modern web standards. Open to remote opportunities.
+            Full Stack Developer crafting exceptional web experiences with React,
+            Next.js, and TypeScript.
+
+            I transform complex problems into clean, scalable solutions. With hands-on
+            experience in freelance development and a track record from HackJos 2025,
+            I specialize in building responsive applications that users love.
+
+            Final-year Computer Science student passionate about modern web technologies,
+            clean architecture, and continuous learning. Ready to contribute to remote
+            teams building the next generation of web applications.s.
           </p>
 
           {/* CTAs */}
