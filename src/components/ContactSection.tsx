@@ -32,7 +32,7 @@ const ContactSection = () => {
         "Accept": "application/json",
       },
       body: JSON.stringify({
-        access_key: "0fbb5919-c80a-45ea-ae0c-2bbf48f4dc9f",
+        access_key: import.meta.env.VITE_WEB3FORM_KEY,
         name: data.name,
         email: data.email,
         message: data.message,
@@ -128,7 +128,7 @@ const ContactSection = () => {
           disabled={status === "submitting"}
         >
           {status === "submitting" ? (
-            <><Loader2 className="w-4 h-4 animate-spin" /> Sending message...</>
+            <><Loader2 className="w-4 h-4 animate-spin" /> Sending...</>
           ) : (
             <><Send className="w-4 h-4" /> Send Message</>
           )}
