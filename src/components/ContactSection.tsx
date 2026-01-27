@@ -128,7 +128,7 @@ const ContactSection = () => {
           disabled={status === "submitting"}
         >
           {status === "submitting" ? (
-            <><Loader2 className="w-4 h-4 animate-spin" /> Sending...</>
+            <><Loader2 className="w-4 h-4 animate-spin" /> Sending message...</>
           ) : (
             <><Send className="w-4 h-4" /> Send Message</>
           )}
