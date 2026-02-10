@@ -17,25 +17,25 @@ const teamMembers = [
     name: "Sadis Isah Sulaiman",
     role: "Cyber Security Specialist",
     collaborationNote: "Security audits and vulnerability assessments",
-    imageUrl: "IMG_2753.JPG",
+    imageUrl: "IMG_2757.JPEG",
   },
   {
     name: "Muhammad Jibril",
     role: "Backend Developer",
     collaborationNote: "API development and database architecture",
-    imageUrl: "IMG_2753.JPG",
+    imageUrl: "IMG_2757.JPEG",
   },
   {
     name: "Ibrahim Yahaya Ibrahim",
     role: "Product Manager",
     collaborationNote: "Product strategy and roadmap planning",
-    imageUrl: "IMG_2753.JPG",
+    imageUrl: "IMG_2757.JPEG",
   },
   {
     name: "Khadija Babangida",
     role: "UI/UX Designer",
     collaborationNote: "User research and interface design",
-    imageUrl: "IMG_2753.JPG",
+    imageUrl: "IMG_2757.JPEG",
   },
 ];
 
